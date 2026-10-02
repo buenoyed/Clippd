@@ -3,48 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Docs · Clipd</title>
+  <title>Docs · Clipped</title>
   <link rel="icon" href="/assets/clipdpfp.png?v=22" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="/assets/clippd-app.css?v=22" />
+  <link rel="stylesheet" href="/assets/clippd-app.css?v=25" />
 </head>
 <body class="home-body">
-  <header class="home-notch">
-    <nav class="home-notch-inner" aria-label="Primary">
-      <a href="/docs">Docs</a>
-      <a class="home-notch-logo" href="/" aria-label="Clipd home">
-        <img src="/assets/clipdpfp.png?v=22" alt="" width="36" height="36" />
-      </a>
-      <a href="/campaigns">Campaigns</a>
-    </nav>
+  <header class="mk-nav">
+    <div class="mk-nav-inner">
+      <a class="mk-brand" href="/"><img src="/assets/clipdpfp.png?v=22" alt="Clipped" width="36" height="36"/></a>
+      <nav class="mk-links">
+        <a class="on" href="/docs">Docs</a>
+        <a href="/campaigns">Campaigns</a>
+        <a href="/launch">Launch</a>
+      </nav>
+      <div class="mk-nav-right">
+        <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA</span> <span data-ca-text>…</span></button>
+        <a class="mk-x" href="https://x.com/clipdonpump" target="_blank" rel="noopener" aria-label="Clipped on X">
+          <img src="/assets/platforms/x.svg" alt="" width="14" height="14"/>
+        </a>
+        <span data-wallet-slot></span>
+        <a class="mk-cta" href="/launch">Launch</a>
+      </div>
+    </div>
   </header>
 
   <main class="docs-main">
     <div class="mk-kicker">Docs</div>
-    <h1 class="page-title">How Clipd works</h1>
+    <h1 class="page-title">How Clipped works</h1>
     <p class="page-sub">Open marketplace for memecoin clipping. Funded in SOL. Paid in SOL.</p>
 
-    <article class="docs-card">
+    <article class="docs-card reveal">
       <h2>For creators</h2>
       <p>Launch a campaign, set every term yourself, and fund the vault with at least $10 in SOL at the live quote. When the SOL lands, the campaign goes live on the public board. Clippers submit links. When views verify, the vault pays them.</p>
-      <p>You pick budget, pay per 1K, UGC rate, viral bonus, platforms, min views, and duration. Clipd does not set a rate card.</p>
+      <p>You pick budget, pay per 1K, UGC rate, viral bonus, platforms, min views, and duration. Clipped does not set a rate card.</p>
       <a class="cta cta-primary" href="/launch">Launch a campaign</a>
     </article>
 
-    <article class="docs-card">
+    <article class="docs-card reveal">
       <h2>For clippers</h2>
       <p>Open Campaigns. Pick a live vault. Post on TikTok, Instagram, YouTube, or X. Submit the link. If the clip hits the campaign’s min views, you get paid from that vault in SOL — no withdrawal step.</p>
       <a class="cta cta-secondary" href="/campaigns">See live campaigns</a>
     </article>
 
-    <article class="docs-card">
+    <article class="docs-card reveal">
       <h2>The vault</h2>
       <p>Each campaign gets its own Solana address. The USD budget is quoted into SOL and refreshed until the first deposit lands. After that the quote is frozen. A tiny shortfall from wallet rounding still counts as funded.</p>
     </article>
 
-    <article class="docs-card">
+    <article class="docs-card reveal">
       <h2>Payouts</h2>
       <p>Budget is shown in USD. Settlement is SOL. Views are checked on the link you submitted. When they verify, SOL leaves the campaign vault and goes to the clipper wallet.</p>
     </article>
@@ -53,7 +62,7 @@
   <footer class="home-foot">
     <a class="home-foot-brand" href="/">
       <img src="/assets/clipdpfp.png?v=22" alt="" width="28" height="28" />
-      Clipd
+      Clipped
     </a>
     <div class="home-foot-links">
       <a href="/docs">Docs</a>
@@ -67,5 +76,17 @@
     </button>
   </footer>
   <script src="/assets/wallet.js?v=9"></script>
+  <script>
+    (function () {
+      if (window.matchMedia && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("in"); });
+        }, { threshold: 0.12 });
+        document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+      }
+    })();
+  </script>
 </body>
 </html>

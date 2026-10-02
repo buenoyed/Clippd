@@ -3,52 +3,64 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clipd</title>
+  <title>Clipped</title>
   <meta name="description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault." />
   <link rel="canonical" href="https://getclippd.fun/" />
   <meta property="og:url" content="https://getclippd.fun/" />
-  <meta property="og:title" content="Clipd" />
+  <meta property="og:title" content="Clipped" />
   <meta property="og:description" content="Open marketplace for memecoin clipping. Creators fund campaigns in SOL. Clippers submit links and get paid." />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Clipd" />
+  <meta property="og:site_name" content="Clipped" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@clipdonpump" />
   <meta name="twitter:creator" content="@clipdonpump" />
-  <meta name="twitter:title" content="Clipd" />
+  <meta name="twitter:title" content="Clipped" />
   <meta name="twitter:description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault." />
   <meta property="og:image" content="https://getclippd.fun/assets/clipdpfp.png" />
   <meta name="twitter:image" content="https://getclippd.fun/assets/clipdpfp.png" />
   <link rel="icon" href="/assets/clipdpfp.png?v=22" type="image/png" />
-  <link rel="preload" as="image" href="/assets/clipdpfp.png?v=22" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="/assets/clippd-app.css?v=22" />
+  <link rel="stylesheet" href="/assets/clippd-app.css?v=25" />
 </head>
 <body class="home-body">
-  <header class="home-notch">
-    <nav class="home-notch-inner" aria-label="Primary">
-      <a href="/docs">Docs</a>
-      <a class="home-notch-logo" href="/" aria-label="Clipd home">
-        <img src="/assets/clipdpfp.png?v=22" alt="" width="36" height="36" />
-      </a>
-      <a href="/campaigns">Campaigns</a>
-    </nav>
+  <header class="mk-nav">
+    <div class="mk-nav-inner">
+      <a class="mk-brand" href="/"><img src="/assets/clipdpfp.png?v=22" alt="Clipped" width="36" height="36"/></a>
+      <nav class="mk-links">
+        <a href="/docs">Docs</a>
+        <a href="/campaigns">Campaigns</a>
+        <a href="/launch">Launch</a>
+      </nav>
+      <div class="mk-nav-right">
+        <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA</span> <span data-ca-text>…</span></button>
+        <a class="mk-x" href="https://x.com/clipdonpump" target="_blank" rel="noopener" aria-label="Clipped on X">
+          <img src="/assets/platforms/x.svg" alt="" width="14" height="14"/>
+        </a>
+        <span data-wallet-slot></span>
+        <a class="mk-cta" href="/launch">Launch</a>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="home-hero">
-      <h1 class="hero-title">Meet Clipd</h1>
-      <img class="hero-c" src="/assets/clipdpfp.png?v=22" alt="Clipd" width="280" height="280" />
+      <h1 class="hero-title">Meet Clipped</h1>
       <p class="hero-claim">The open marketplace for memecoin clipping.</p>
       <p class="hero-note">Creators fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault.</p>
       <div class="cta-row">
         <a class="cta cta-secondary" href="#campaigns">See live campaigns</a>
         <a class="cta cta-primary" href="/launch">Launch a campaign</a>
       </div>
+      <div class="home-hero-stats">
+        <div><strong id="stat-rewards">$0.00</strong><span>Total rewards</span></div>
+        <div><strong id="stat-views">0</strong><span>Viral views</span></div>
+        <div><strong id="stat-clippers-hero">0</strong><span>Clippers</span></div>
+      </div>
     </section>
 
-    <section class="home-block" id="campaigns">
+    <section class="home-block reveal" id="campaigns">
       <div class="home-block-head">
         <div>
           <div class="mk-kicker">Live board</div>
@@ -62,12 +74,12 @@
       </div>
     </section>
 
-    <section class="home-block" id="how">
+    <section class="home-block reveal" id="how">
       <div class="home-block-head">
         <div>
-          <div class="mk-kicker">How it works</div>
-          <h2>Four steps. Then it runs.</h2>
-          <p>No agency. No content team. One vault per campaign.</p>
+          <div class="mk-kicker">Workflow</div>
+          <h2>How it works</h2>
+          <p>Creators fund a vault. Clippers submit links. Views get verified. SOL pays out.</p>
         </div>
         <a class="btn-pill" href="/docs">Read the docs</a>
       </div>
@@ -76,37 +88,61 @@
           <div class="how-step">
             <div class="how-n">01</div>
             <div>
-              <h3>Fund</h3>
-              <p>Creator sets budget, rate, platforms, and min views, then sends the quoted SOL.</p>
+              <h3>Pick a campaign</h3>
+              <p>Browse live funded campaigns. Terms, platforms, and vault balance are public. Anyone can clip.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="how-n">02</div>
             <div>
-              <h3>Vault</h3>
-              <p>That money sits in a campaign vault on Solana. Terms stay public.</p>
+              <h3>Submit your clip</h3>
+              <p>Paste a TikTok, Instagram, YouTube, or X link. No OAuth. No content studio.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="how-n">03</div>
             <div>
-              <h3>Clip</h3>
-              <p>Anyone posts on TikTok, Instagram, YouTube, or X and submits the link.</p>
+              <h3>Views get verified</h3>
+              <p>Clipped checks the views on the link. Once they qualify, the vault is ready to pay.</p>
             </div>
           </div>
           <div class="how-step">
             <div class="how-n">04</div>
             <div>
-              <h3>Pay</h3>
-              <p>Views get verified. Clippers get paid from the vault in SOL.</p>
+              <h3>Get paid in SOL</h3>
+              <p>Payouts come from the campaign vault to your wallet. Budget in USD. Settlement in SOL.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="home-stats">
-        <div class="home-stat"><strong id="stat-rewards">$0.00</strong><span>Paid in SOL</span></div>
         <div class="home-stat"><strong id="stat-live">0</strong><span>Live campaigns</span></div>
-        <div class="home-stat"><strong id="stat-clippers">0</strong><span>Clippers</span></div>
+        <div class="home-stat"><strong id="stat-tvl">$0.00</strong><span>Vault TVL</span></div>
+        <div class="home-stat"><strong id="stat-paid">$0.00</strong><span>Paid in SOL</span></div>
+      </div>
+    </section>
+
+    <section class="home-block reveal" id="vault">
+      <div class="how-window home-vault">
+        <div class="home-vault-copy">
+          <div class="mk-kicker">Campaign vault</div>
+          <h2>Payouts from the vault.</h2>
+          <p>Creators fund through Clipped — live SOL quotes, money locked on-chain. When a clip’s views verify, the vault pays the clipper in SOL.</p>
+        </div>
+        <div class="home-vault-card">
+          <div class="label">Campaign vault</div>
+          <div class="stat" id="stat-vault">$0.00</div>
+          <div class="meta">Live quote · Paid in SOL · On verify</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-block home-launch reveal" id="launch">
+      <div class="mk-kicker">For coin devs</div>
+      <h2>Launch a campaign.</h2>
+      <p>You set the terms and the budget. Fund at least $10 in SOL and go live. A fresh vault is created for every campaign.</p>
+      <div class="cta-row" style="margin-top:1.25rem;justify-content:flex-start">
+        <a class="cta cta-primary" href="/launch">Create campaign</a>
       </div>
     </section>
   </main>
@@ -114,7 +150,7 @@
   <footer class="home-foot">
     <a class="home-foot-brand" href="/">
       <img src="/assets/clipdpfp.png?v=22" alt="" width="28" height="28" />
-      Clipd
+      Clipped
     </a>
     <div class="home-foot-links">
       <a href="/docs">Docs</a>
@@ -134,6 +170,12 @@
       function usd(n) {
         return "$" + Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
       }
+      function viewsLabel(n) {
+        n = Number(n || 0);
+        if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M+";
+        if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+        return String(Math.round(n));
+      }
       function esc(s) {
         return String(s == null ? "" : s)
           .replace(/&/g, "&amp;")
@@ -141,16 +183,39 @@
           .replace(/>/g, "&gt;")
           .replace(/"/g, "&quot;");
       }
+      if (window.matchMedia && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("in"); });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+      }
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+      function tween(el, to, fmt) {
+        if (!el) return;
+        if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          el.textContent = fmt(to);
+          return;
+        }
+        var start = performance.now();
+        function tick(now) {
+          var t = Math.min(1, (now - start) / 900);
+          el.textContent = fmt(to * easeOut(t));
+          if (t < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
       fetch("/api/stats")
         .then(function (r) { return r.json(); })
         .then(function (s) {
-          function set(id, v) {
-            var el = document.getElementById(id);
-            if (el) el.textContent = v;
-          }
-          set("stat-rewards", usd(s.paid_usd));
-          set("stat-live", String(s.live_campaigns || 0));
-          set("stat-clippers", String(s.clippers || 0));
+          tween(document.getElementById("stat-rewards"), Number(s.paid_usd || 0), usd);
+          tween(document.getElementById("stat-views"), Number(s.views || 0), viewsLabel);
+          tween(document.getElementById("stat-clippers-hero"), Number(s.clippers || 0), function (n) { return String(Math.round(n)); });
+          tween(document.getElementById("stat-live"), Number(s.live_campaigns || 0), function (n) { return String(Math.round(n)); });
+          tween(document.getElementById("stat-tvl"), Number(s.tvl_usd || 0), usd);
+          tween(document.getElementById("stat-paid"), Number(s.paid_usd || 0), usd);
+          tween(document.getElementById("stat-vault"), Number(s.tvl_usd || 0), usd);
         })
         .catch(function () {});
 
@@ -164,9 +229,9 @@
             box.innerHTML = '<div class="empty card">No live campaigns yet. <a href="/launch">Launch one</a> to get a vault on the board.</div>';
             return;
           }
-          box.innerHTML = rows.map(function (c) {
+          box.innerHTML = rows.map(function (c, i) {
             return (
-              '<a class="glass-card glass-card-hover camp-card p-5" href="/campaigns/' + esc(c.id) + '">' +
+              '<a class="glass-card glass-card-hover camp-card p-5 rise-item" style="animation-delay:' + (i * 70) + 'ms" href="/campaigns/' + esc(c.id) + '">' +
                 '<div style="font-size:15px;font-weight:600">' + esc(c.ticker) + (c.name ? " · " + esc(c.name) : "") + "</div>" +
                 '<div class="meta" style="margin-top:.35rem">Vault ' + usd(c.budget_usd) + " · " + (c.clip_count || 0) + " clips</div>" +
               "</a>"

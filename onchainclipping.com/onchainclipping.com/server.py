@@ -176,12 +176,12 @@ def demo_campaign():
     x = "https://x.com/solana/status/1740000000000000000"
     return {
         "id": DEMO_ID,
-        "ticker": "$CLIPD",
-        "name": "Clipd",
+        "ticker": "$CLIPPED",
+        "name": "Clipped",
         "demo": True,
         "contract": "",
-        "hashtag": "#Clipd",
-        "brief": "Clip $CLIPD. Original edits only — no straight reposts.",
+        "hashtag": "#Clipped",
+        "brief": "Clip $CLIPPED. Original edits only — no straight reposts.",
         "budget_usd": 2000,
         "rate_per_1k_usd": 1.5,
         "ugc_rate_per_1k_usd": 3.5,
