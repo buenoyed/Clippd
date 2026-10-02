@@ -1,411 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" as="image" href="/assets/clipdpfp.png" />
-    <link rel="stylesheet" href="/assets/styles-Cb2BMar6.css" data-precedence="default" />
-    <link rel="stylesheet" href="/assets/clippd-app.css?v=17" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" data-precedence="default" />
-    <title>Clipd - The memecoin clipping marketplace</title>
-    <meta name="description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault." />
-    <link rel="canonical" href="https://getclippd.fun/" />
-    <meta property="og:url" content="https://getclippd.fun/" />
-    <meta property="og:title" content="Clipd - The memecoin clipping marketplace" />
-    <meta property="og:description" content="Open marketplace for memecoin clipping. Creators fund campaigns in SOL. Clippers submit links and get paid." />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Clipd" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@clipdonpump" />
-    <meta name="twitter:creator" content="@clipdonpump" />
-    <link rel="icon" href="/assets/clipdpfp.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-    <meta name="twitter:title" content="Clipd - The memecoin clipping marketplace">
-    <meta name="twitter:description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault.">
-    <meta property="og:image" content="https://getclippd.fun/assets/clipdpfp.png">
-    <meta name="twitter:image" content="https://getclippd.fun/assets/clipdpfp.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clipd</title>
+  <meta name="description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault." />
+  <link rel="canonical" href="https://getclippd.fun/" />
+  <meta property="og:url" content="https://getclippd.fun/" />
+  <meta property="og:title" content="Clipd" />
+  <meta property="og:description" content="Open marketplace for memecoin clipping. Creators fund campaigns in SOL. Clippers submit links and get paid." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Clipd" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@clipdonpump" />
+  <meta name="twitter:creator" content="@clipdonpump" />
+  <meta name="twitter:title" content="Clipd" />
+  <meta name="twitter:description" content="Fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault." />
+  <meta property="og:image" content="https://getclippd.fun/assets/clipdpfp.png" />
+  <meta name="twitter:image" content="https://getclippd.fun/assets/clipdpfp.png" />
+  <link rel="icon" href="/assets/clipdpfp.png?v=22" type="image/png" />
+  <link rel="preload" as="image" href="/assets/clipdpfp.png?v=22" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="/assets/clippd-app.css?v=22" />
 </head>
+<body class="home-body">
+  <header class="home-notch">
+    <nav class="home-notch-inner" aria-label="Primary">
+      <a href="/docs">Docs</a>
+      <a class="home-notch-logo" href="/" aria-label="Clipd home">
+        <img src="/assets/clipdpfp.png?v=22" alt="" width="36" height="36" />
+      </a>
+      <a href="/campaigns">Campaigns</a>
+    </nav>
+  </header>
 
-<body>
-    <div class="min-h-screen">
-        <header class="mk-nav">
-            <div class="mk-nav-inner">
-                <a class="mk-brand" href="/"><img src="/assets/clipdpfp.png" alt="Clipd" width="36" height="36"/>Clipd</a>
-                <div class="mk-sep"></div>
-                <nav class="mk-links">
-                    <a class="on" href="/">Home</a>
-                    <a href="/campaigns">Campaigns</a>
-                    <a href="/launch">Launch</a>
-                </nav>
-                <div class="mk-nav-right">
-                    <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA:</span> <span data-ca-text>…</span></button>
-                    <a class="mk-x" href="https://x.com/clipdonpump" target="_blank" rel="noopener" aria-label="Clipd on X">
-                      <img src="/assets/platforms/x.svg" alt="" width="14" height="14"/>
-                    </a>
-                    <span data-wallet-slot></span>
-                    <a class="mk-cta" href="/launch">Launch</a>
-                </div>
-            </div>
-        </header>
-    <section class="relative overflow-hidden">
-        <div class="home-hero mx-auto max-w-5xl px-6 py-10 sm:py-14">
-            <div class="clip-frame">
-                <div class="clip-frame-bar">
-                    <span class="rec"><i></i> REC</span>
-                    <span>CAM 01</span>
-                    <span class="clip-frame-title">clipd://home</span>
-                    <span class="clip-frame-meta">NTSC</span>
-                </div>
-                <div class="clip-frame-body">
-                <div class="home-kicker">Open marketplace · Paid in SOL</div>
-                <h1 class="mx-auto mt-5 max-w-5xl font-display text-5xl font-extrabold leading-[0.94] sm:text-6xl">CLIP. POST.<br/><span class="text-brand-dark">GET PAID.</span></h1>
-                <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">The open marketplace for memecoin clipping. Creators fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault.</p>
-                <div class="home-hero-ctas mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                    <a href="/campaigns" class="btn btn-primary">Start Clipping</a>
-                    <a href="/launch" class="btn btn-ghost">Fund a Campaign</a>
-                </div>
-                <div class="home-hero-stats mx-auto grid max-w-3xl grid-cols-3 gap-6 sm:gap-10">
-                        <div>
-                            <div class="tabular text-3xl font-extrabold sm:text-4xl"><span id="stat-rewards">$0.00</span></div>
-                            <div class="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Total Rewards</div>
-                        </div>
-                        <div>
-                            <div class="tabular text-3xl font-extrabold sm:text-4xl"><span id="stat-views">0</span></div>
-                            <div class="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Viral Views</div>
-                        </div>
-                        <div>
-                            <div class="tabular text-3xl font-extrabold sm:text-4xl"><span id="stat-clippers-hero">0</span></div>
-                            <div class="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Active Clippers</div>
-                        </div>
-                </div>
-                </div>
-            </div>
-        </div>
+  <main>
+    <section class="home-hero">
+      <h1 class="hero-title">Meet Clipd</h1>
+      <img class="hero-c" src="/assets/clipdpfp.png?v=22" alt="Clipd" width="280" height="280" />
+      <p class="hero-claim">The open marketplace for memecoin clipping.</p>
+      <p class="hero-note">Creators fund a campaign in SOL. Anyone clips. Views get verified. Clippers get paid from the vault.</p>
+      <div class="cta-row">
+        <a class="cta cta-secondary" href="#campaigns">See live campaigns</a>
+        <a class="cta cta-primary" href="/launch">Launch a campaign</a>
+      </div>
     </section>
-    <section class="flywheel-band" id="flywheel">
-        <div class="home-band mx-auto max-w-6xl px-6">
-            <h2 class="max-w-5xl font-display text-4xl font-extrabold leading-[.95] tracking-tighter sm:text-5xl md:text-6xl">WE DON&#x27;T NEED TO REINVENT CONTENT.</h2>
-            <p class="mt-6 max-w-4xl text-base font-semibold leading-relaxed text-white/95 sm:text-lg">We just need to become the marketplace where clipping happens. Creators fund a campaign in SOL. That money sits in a vault. Clippers submit links and get paid when views verify.</p>
-            <p class="mt-5 max-w-4xl text-sm leading-relaxed text-white/80 sm:text-base">Want to promote a coin? Put budget aside through Clipd. Live SOL quotes. Anyone can clip. No agency. No content team.</p>
-            <div class="flywheel-card mt-10">
-                <div class="mb-5 flex flex-wrap items-start justify-between gap-4">
-                    <div>
-                        <div class="text-[10px] font-bold uppercase tracking-[0.28em] text-white/70">The loop</div>
-                        <h3 class="mt-2 max-w-lg font-display text-2xl font-extrabold leading-none tracking-tighter sm:text-3xl">FUND THE VAULT. CLIPS GET PAID.</h3>
-                    </div>
-                    <div class="inline-flex items-center gap-2 border-2 border-[#15161b] bg-[#15161b] px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#60cb89]" style="border-radius:4px;box-shadow:3px 3px 0 #15161b"><span class="h-1.5 w-1.5 bg-[#60cb89]"></span>Live loop</div>
-                </div>
-                <div class="flywheel-stage">
-                    <div class="flywheel-well"></div>
-                    <svg class="flywheel-orbit" viewBox="0 0 400 400" aria-hidden="true">
-                        <circle cx="200" cy="200" r="118" fill="none" stroke="rgba(64,189,133,0.45)" stroke-width="10"></circle>
-                        <g class="flywheel-arms">
-                            <circle cx="200" cy="200" r="118" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="7 13" stroke-linecap="round"></circle>
-                            <g stroke="#fff" stroke-width="3" stroke-linecap="round">
-                                <line x1="200" y1="156" x2="200" y2="92"></line>
-                                <line x1="244" y1="200" x2="308" y2="200"></line>
-                                <line x1="200" y1="244" x2="200" y2="308"></line>
-                                <line x1="156" y1="200" x2="92" y2="200"></line>
-                            </g>
-                            <g fill="#fff">
-                                <circle cx="200" cy="82" r="6"></circle>
-                                <circle cx="318" cy="200" r="6"></circle>
-                                <circle cx="200" cy="318" r="6"></circle>
-                                <circle cx="82" cy="200" r="6"></circle>
-                            </g>
-                            <g fill="#fff">
-                                <g transform="translate(283.5 116.5) rotate(135)"><path d="M0 -13 L8.5 7.5 L0 1.5 L-8.5 7.5 Z"></path></g>
-                                <g transform="translate(283.5 283.5) rotate(225)"><path d="M0 -13 L8.5 7.5 L0 1.5 L-8.5 7.5 Z"></path></g>
-                                <g transform="translate(116.5 283.5) rotate(315)"><path d="M0 -13 L8.5 7.5 L0 1.5 L-8.5 7.5 Z"></path></g>
-                                <g transform="translate(116.5 116.5) rotate(45)"><path d="M0 -13 L8.5 7.5 L0 1.5 L-8.5 7.5 Z"></path></g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="flywheel-halo"></div>
-                    <div class="flywheel-hub"><img src="/assets/clipdpfp.png" alt="Clipd" /></div>
-                    <div class="flywheel-node flywheel-node-n">
-                        <div class="flywheel-node-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></svg></div>
-                        <div><b>01</b><h3>FUND</h3><p>Creator deposits SOL</p></div>
-                    </div>
-                    <div class="flywheel-node flywheel-node-e">
-                        <div class="flywheel-node-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg></div>
-                        <div><b>02</b><h3>VAULT</h3><p>Budget locked on-chain</p></div>
-                    </div>
-                    <div class="flywheel-node flywheel-node-s">
-                        <div class="flywheel-node-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
-                        <div><b>03</b><h3>CLIP</h3><p>Anyone submits links</p></div>
-                    </div>
-                    <div class="flywheel-node flywheel-node-w">
-                        <div class="flywheel-node-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                        <div><b>04</b><h3>PAY</h3><p>Verified views, paid in SOL</p></div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-                <div class="flywheel-stat"><span>Clippers</span><strong id="stat-clippers">0</strong></div>
-                <div class="flywheel-stat"><span>Live campaigns</span><strong id="stat-live">0</strong></div>
-                <div class="flywheel-stat"><span>Vault TVL</span><strong id="stat-tvl">$0.00</strong></div>
-                <div class="flywheel-stat"><span>Paid in SOL</span><strong id="stat-paid">$0.00</strong></div>
-            </div>
+
+    <section class="home-block" id="campaigns">
+      <div class="home-block-head">
+        <div>
+          <div class="mk-kicker">Live board</div>
+          <h2>Campaigns</h2>
+          <p>Funded vaults only. Clip, submit the link, get paid in SOL.</p>
         </div>
+        <a class="btn-pill go primary" href="/campaigns">Open board</a>
+      </div>
+      <div id="home-camps" class="camp-grid home-camp-grid">
+        <p class="meta">Loading campaigns…</p>
+      </div>
     </section>
-    <section id="how" class="border-t border-hairline">
-        <div class="home-process mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[400px_1fr]">
-            <div class="lg:sticky lg:top-24 lg:h-fit"><span class="text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground">Workflow</span>
-                <h2 class="mt-5 font-display text-4xl font-extrabold italic leading-none tracking-tighter sm:text-5xl">THE<br/>PROCESS.</h2>
-                <p class="mt-5 max-w-md leading-relaxed text-muted-foreground">Creators fund a vault. Clippers submit links. Views get verified. SOL pays out automatically.</p>
-                <div class="mt-6 rounded-3xl border border-hairline bg-surface/50 p-5"><span class="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Creator decides</span>
-                    <p class="mt-3 text-sm leading-relaxed text-muted-foreground">Budget, payout, platforms, min views, bonuses — the creator sets every term. Clipd doesn’t.</p>
-                </div>
+
+    <section class="home-block" id="how">
+      <div class="home-block-head">
+        <div>
+          <div class="mk-kicker">How it works</div>
+          <h2>Four steps. Then it runs.</h2>
+          <p>No agency. No content team. One vault per campaign.</p>
+        </div>
+        <a class="btn-pill" href="/docs">Read the docs</a>
+      </div>
+      <div class="how-window">
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-n">01</div>
+            <div>
+              <h3>Fund</h3>
+              <p>Creator sets budget, rate, platforms, and min views, then sends the quoted SOL.</p>
             </div>
-            <div class="relative">
-                <div class="absolute bottom-0 left-8 top-0 hidden w-px bg-hairline md:block"></div>
-                <div class="relative home-step last:pb-0">
-                    <div class="mb-5 hidden h-12 w-12 items-center justify-center rounded-2xl border-2 border-hairline bg-background font-display text-lg font-extrabold md:absolute md:left-0 md:top-0 md:flex">01</div>
-                    <div class="mb-8 md:hidden"><span class="rounded-lg border border-hairline bg-surface px-3 py-1 font-display text-xs font-extrabold">01</span></div>
-                    <h3 class="mb-3 font-display text-2xl font-extrabold tracking-tight">Pick your campaign</h3>
-                    <p class="mb-6 max-w-lg leading-relaxed text-muted-foreground">Browse live funded campaigns. Each one shows the creator’s terms, platforms, and vault balance up front. Anyone can clip — no application, no gatekeeping.</p>
-                    <div class="grid max-w-md gap-4">
-                        <div class="phone-frame">
-                        <div class="phone-notch"></div>
-                        <a href="/campaigns" class="glass-card glass-card-hover block p-5">
-                            <div class="flex items-start gap-3"><img src="/assets/clipdpfp.png" alt="$CLIPD" class="h-11 w-11 shrink-0 rounded-xl object-cover" style="box-shadow:inset 0 0 0 1px #60cb8955" />
-                                <div class="min-w-0 flex-1">
-                                    <div class="truncate text-[15px] font-semibold tracking-tight">$CLIPD</div>
-                                    <div class="mt-1 flex items-center gap-2"><span class="inline-flex items-center gap-1 rounded-full bg-emerald-500/12 px-2 py-0.5 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 ring-1 ring-inset ring-emerald-500/25"><span class="h-1 w-1 rounded-full bg-emerald-500 pulse-dot"></span>Active</span>
-                                        <span
-                                            class="inline-flex items-center gap-1 text-[11px] text-muted-foreground tabular"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3 w-3"
-                                                aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>14
-                                            <!-- -->days left</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="mt-5">
-                                <div class="text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">Campaign vault</div>
-                                <div class="mt-1 flex items-baseline gap-2 tabular text-3xl font-bold tracking-tight text-emerald-500"><span class="text-lg">↗</span><span>$0.00</span></div>
-                    </div>
-                    <div class="mt-4">
-                        <div class="text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground">Platforms</div>
-                        <div class="mt-2 flex items-center gap-2.5 text-muted-foreground"><svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M20 8.5a6.6 6.6 0 0 1-4-1.35v7.1a5.75 5.75 0 1 1-5.75-5.75c.24 0 .47.02.7.05v2.9a2.9 2.9 0 1 0 2.05 2.78V2h2.85a4.2 4.2 0 0 0 4.15 3.6V8.5Z"></path></svg>
-                            <svg
-                                viewBox="0 0 24 24" fill="none" class="h-4 w-4" aria-hidden="true" stroke="currentColor" stroke-width="1.8">
-                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
-                                </svg><svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M21.6 7.2s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.7 4 12 4 12 4s-3.7 0-6.7.3c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 8.8 2 10.5v1.7c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.9 1.9.8 2.4.9 1.7.2 6.6.3 6.6.3s3.7 0 6.7-.3c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3v-1.7c0-1.7-.2-3.3-.2-3.3ZM10 14.5v-5l4.5 2.5-4.5 2.5Z"></path></svg>
-                                <svg
-                                    viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
-                                    <path d="M18.244 2H21l-6.52 7.45L22 22h-6.9l-4.86-6.36L4.6 22H1.84l6.98-7.98L2 2h7.06l4.4 5.83L18.24 2Zm-1.21 18.2h1.72L7.05 3.7H5.2l11.83 16.5Z"></path>
-                                    </svg>
-                        </div>
-                    </div>
-                    <div class="mt-4 border-t border-hairline pt-3">
-                        <div class="flex items-baseline justify-between text-[11px] tabular"><span class="text-muted-foreground"><span class="font-semibold text-foreground">$0.00</span> paid out</span><span class="text-muted-foreground">of <span class="font-semibold text-foreground">$0.00</span></span>
-                        </div>
-                        <div class="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-surface">
-                            <div class="h-full rounded-full bg-primary transition-all" style="width:0%"></div>
-                        </div>
-                        <div class="mt-1.5 flex items-center justify-between text-[10px] uppercase tracking-wider text-muted-foreground"><span>0<!-- -->% used</span><span>Min <!-- -->1,000<!-- --> views to qualify</span></div>
-                    </div>
-                    </a>
-                        </div>
+          </div>
+          <div class="how-step">
+            <div class="how-n">02</div>
+            <div>
+              <h3>Vault</h3>
+              <p>That money sits in a campaign vault on Solana. Terms stay public.</p>
             </div>
-        </div>
-        <div class="relative home-step last:pb-0">
-            <div class="mb-5 hidden h-12 w-12 items-center justify-center rounded-2xl border-2 border-hairline bg-background font-display text-lg font-extrabold md:absolute md:left-0 md:top-0 md:flex">02</div>
-            <div class="mb-8 md:hidden"><span class="rounded-lg border border-hairline bg-surface px-3 py-1 font-display text-xs font-extrabold">02</span></div>
-            <h3 class="mb-3 font-display text-2xl font-extrabold tracking-tight">Submit your clip</h3>
-            <p class="mb-6 max-w-lg leading-relaxed text-muted-foreground">Paste a link to your clip. We verify the views. No OAuth, no content studio — just the post you already made.</p>
-            <div class="max-w-md space-y-3">
-                <div class="flex items-center justify-between rounded-2xl border border-hairline bg-surface/40 p-4">
-                    <div class="flex items-center gap-3">
-                        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-surface"><svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path d="M20 8.5a6.6 6.6 0 0 1-4-1.35v7.1a5.75 5.75 0 1 1-5.75-5.75c.24 0 .47.02.7.05v2.9a2.9 2.9 0 1 0 2.05 2.78V2h2.85a4.2 4.2 0 0 0 4.15 3.6V8.5Z"></path></svg></div>
-                        <span
-                            class="text-sm font-bold">@crypto_native</span>
-                    </div><span class="rounded px-2 py-1 text-[10px] font-bold uppercase tracking-widest bg-primary/10 text-primary">Verified</span></div>
-                <div class="flex items-center justify-between rounded-2xl border border-hairline bg-surface/40 p-4">
-                    <div class="flex items-center gap-3">
-                        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-surface"><svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.9l-4.86-6.36L4.6 22H1.84l6.98-7.98L2 2h7.06l4.4 5.83L18.24 2Zm-1.21 18.2h1.72L7.05 3.7H5.2l11.83 16.5Z"></path></svg></div>
-                        <span
-                            class="text-sm font-bold">@clipped_daily</span>
-                    </div><span class="rounded px-2 py-1 text-[10px] font-bold uppercase tracking-widest bg-primary/10 text-primary">Verified</span></div>
-                <div class="flex items-center justify-between rounded-2xl border border-hairline bg-surface/40 p-4">
-                    <div class="flex items-center gap-3">
-                        <div class="flex h-8 w-8 items-center justify-center rounded-full bg-surface"><svg viewBox="0 0 24 24" fill="none" class="h-3.5 w-3.5" aria-hidden="true" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></div>
-                        <span
-                            class="text-sm font-bold">@ne_reels</span>
-                    </div><span class="rounded px-2 py-1 text-[10px] font-bold uppercase tracking-widest border border-hairline text-muted-foreground">Submitted</span></div>
+          </div>
+          <div class="how-step">
+            <div class="how-n">03</div>
+            <div>
+              <h3>Clip</h3>
+              <p>Anyone posts on TikTok, Instagram, YouTube, or X and submits the link.</p>
             </div>
-        </div>
-        <div class="relative home-step last:pb-0">
-            <div class="mb-5 hidden h-12 w-12 items-center justify-center rounded-2xl border-2 border-hairline bg-background font-display text-lg font-extrabold md:absolute md:left-0 md:top-0 md:flex">03</div>
-            <div class="mb-8 md:hidden"><span class="rounded-lg border border-hairline bg-surface px-3 py-1 font-display text-xs font-extrabold">03</span></div>
-            <h3 class="mb-3 font-display text-2xl font-extrabold tracking-tight">Views get verified</h3>
-            <p class="mb-6 max-w-lg leading-relaxed text-muted-foreground">We check the views on the link you submitted. Once they verify, the vault pays you in SOL — automatically.</p>
-            <div class="rounded-2xl border border-hairline bg-surface/40 p-4">
-                <div class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Paid from the vault</div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="relative rounded-xl border p-3 transition-colors border-primary/60 bg-primary/5">
-                        <div class="flex items-center gap-2.5">
-                            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full text-sm font-bold"><img src="/__l5e/assets-v1/973c67ea-1674-49bb-a54c-3a728ca0cd69/sol-logo.png" alt="SOL" class="h-8 w-8 object-cover" /></div>
-                            <div class="min-w-0">
-                                <div class="text-sm font-semibold tracking-tight">SOL</div>
-                                <div class="truncate text-[10px] text-muted-foreground">Solana · Native</div>
-                            </div><span class="ml-auto flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">✓</span></div>
-                        <div class="mt-2 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Live quote · Paid in SOL</div>
-                    </div>
-                    <div class="relative rounded-xl border p-3 transition-colors border-hairline bg-background/60 hover:border-primary/30">
-                        <div class="flex items-center gap-2.5">
-                            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full text-sm font-bold"><img src="/__l5e/assets-v1/bedf1041-f66f-42a4-a1e9-905b4778f3c7/usdc-logo.webp" alt="USD quote" class="h-8 w-8 object-cover" /></div>
-                            <div class="min-w-0">
-                                <div class="text-sm font-semibold tracking-tight">USD quote</div>
-                                <div class="truncate text-[10px] text-muted-foreground">Shown live · Settled in SOL</div>
-                            </div>
-                        </div>
-                        <div class="mt-2 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Budget in dollars · Payout in SOL</div>
-                    </div>
-                </div>
-                <div class="mt-3 flex items-center gap-2 rounded-lg bg-background/60 px-3 py-2 text-[11px] text-muted-foreground"><span class="h-1.5 w-1.5 rounded-full bg-primary pulse-dot"></span>Streamed straight to your Phantom wallet — no withdrawal step.</div>
+          </div>
+          <div class="how-step">
+            <div class="how-n">04</div>
+            <div>
+              <h3>Pay</h3>
+              <p>Views get verified. Clippers get paid from the vault in SOL.</p>
             </div>
+          </div>
         </div>
-        <div class="relative home-step last:pb-0">
-            <div class="mb-5 hidden h-12 w-12 items-center justify-center rounded-2xl border-2 border-hairline bg-background font-display text-lg font-extrabold md:absolute md:left-0 md:top-0 md:flex">04</div>
-            <div class="mb-8 md:hidden"><span class="rounded-lg border border-hairline bg-surface px-3 py-1 font-display text-xs font-extrabold">04</span></div>
-            <h3 class="mb-3 font-display text-2xl font-extrabold tracking-tight">Get paid in SOL</h3>
-            <p class="mb-6 max-w-lg leading-relaxed text-muted-foreground">Your earnings climb as views roll in. When views verify, SOL is sent from the campaign vault to your wallet.</p>
-            <div class="overflow-hidden rounded-2xl border border-hairline bg-surface/40">
-                <div class="grid grid-cols-[1fr_auto_auto] gap-6 border-b border-hairline px-4 py-3 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground"><span>Cycle</span><span>Status</span><span class="text-right">Amount</span></div>
-                <div class="grid grid-cols-[1fr_auto_auto] items-center gap-6 border-b border-hairline/50 px-4 py-3 last:border-0">
-                    <div class="flex items-center gap-2.5 text-sm font-semibold"><span class="text-muted-foreground">▤</span>$CLIPD · —</div><span class="rounded-full px-2.5 py-0.5 text-[10px] font-semibold ring-1 ring-inset bg-surface text-muted-foreground ring-hairline">None yet</span><span class="tabular text-right text-sm font-bold">$0.00</span></div>
-                <div
-                    class="grid grid-cols-[1fr_auto_auto] items-center gap-6 border-b border-hairline/50 px-4 py-3 last:border-0">
-                    <div class="flex items-center gap-2.5 text-sm font-semibold"><span class="text-muted-foreground">▤</span>$CLIPD · —</div><span class="rounded-full px-2.5 py-0.5 text-[10px] font-semibold ring-1 ring-inset bg-surface text-muted-foreground ring-hairline">None yet</span><span class="tabular text-right text-sm font-bold">$0.00</span></div>
-            <div
-                class="grid grid-cols-[1fr_auto_auto] items-center gap-6 border-b border-hairline/50 px-4 py-3 last:border-0">
-                <div class="flex items-center gap-2.5 text-sm font-semibold"><span class="text-muted-foreground">▤</span>$CLIPD · —</div><span class="rounded-full px-2.5 py-0.5 text-[10px] font-semibold ring-1 ring-inset bg-surface text-muted-foreground ring-hairline">None yet</span><span class="tabular text-right text-sm font-bold">$0.00</span></div>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
+      <div class="home-stats">
+        <div class="home-stat"><strong id="stat-rewards">$0.00</strong><span>Paid in SOL</span></div>
+        <div class="home-stat"><strong id="stat-live">0</strong><span>Live campaigns</span></div>
+        <div class="home-stat"><strong id="stat-clippers">0</strong><span>Clippers</span></div>
+      </div>
     </section>
-    <section class="border-t border-hairline">
-        <div class="mx-auto max-w-7xl px-6 home-section">
-            <div class="clip-frame">
-            <div class="clip-frame-bar">
-                <span class="rec"><i></i> REC</span>
-                <span>VAULT</span>
-                <span class="clip-frame-title">clipd://payouts</span>
-            </div>
-            <div class="clip-frame-body" style="text-align:left;padding:1.75rem">
-                <div class="grid gap-12 md:grid-cols-[1.2fr_1fr] md:items-center">
-                    <div>
-                        <div class="home-kicker">Campaign vault</div>
-                        <h2 class="mt-5 font-display text-3xl font-extrabold tracking-tighter sm:text-5xl">Payouts from the campaign vault.</h2>
-                        <p class="mt-4 max-w-xl text-muted-foreground">Creators fund a campaign through Clipd — live SOL quotes, money locked in a vault. When a clip’s views verify, the vault pays the clipper in SOL. Fully transparent, real-time, on-chain.</p>
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <div class="home-kicker"><span class="text-xs text-muted-foreground">Funded in</span><span class="tabular ml-2 text-xs font-bold">SOL · live quote</span></div>
-                            <div class="home-kicker"><span class="text-xs text-muted-foreground">Payout token</span><span class="tabular ml-2 text-xs font-bold">SOL</span></div>
-                            <div class="home-kicker"><span class="text-xs text-muted-foreground">Settlement</span><span class="tabular ml-2 text-xs font-bold">On verify</span></div>
-                        </div>
-                    </div>
-                    <div class="glass-card p-5">
-                        <div class="mb-4 flex items-center justify-between"><span class="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Campaign vault</span><span class="inline-block h-1.5 w-1.5 bg-primary"></span></div>
-                        <div class="tabular text-4xl font-extrabold tracking-tighter text-primary"><span>$0.00</span></div>
-                        <div class="mt-6 space-y-2.5">
-                            <div class="tabular flex items-center justify-between text-xs"><span class="text-muted-foreground">Waiting</span><span>No clips verified yet</span></div>
-                            <div class="tabular flex items-center justify-between text-xs"><span class="text-muted-foreground">—</span><span>$0.00</span></div>
-                            <div class="tabular flex items-center justify-between text-xs"><span class="text-muted-foreground">—</span><span>$0.00</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-    <section id="launch" class="relative border-t border-hairline">
-        <div class="mx-auto max-w-3xl px-6 home-section">
-            <div class="clip-frame">
-                <div class="clip-frame-bar">
-                    <span class="rec"><i></i> REC</span>
-                    <span>CAM 02</span>
-                    <span class="clip-frame-title">clipd://launch</span>
-                </div>
-                <div class="clip-frame-body">
-            <div class="home-kicker">For coin devs</div>
-            <h2 class="mt-6 font-display text-5xl font-black uppercase leading-[0.9] tracking-tight sm:text-6xl">Launch a<br/><span class="italic text-primary">campaign.</span></h2>
-            <p class="mx-auto mt-7 max-w-lg text-base leading-relaxed text-muted-foreground">You set the terms and the budget. Fund at least $10 in SOL and go live. A fresh vault wallet is created for every campaign.</p>
-            <div class="mt-8"><a href="/launch" class="btn btn-primary">Create campaign</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="border-t border-hairline">
-        <div class="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-4">
-            <div class="col-span-2">
-                <div class="flex items-center gap-2">
-                    <img src="/assets/clipdpfp.png" alt="Clipd" class="h-8 w-8 rounded-lg object-cover"/><span class="text-xl font-extrabold tracking-tighter">Clipd</span></div>
-                <p class="mt-6 max-w-xs text-sm italic leading-relaxed text-muted-foreground">The marketplace where memecoin clipping happens. Funded in SOL. Paid in SOL.</p>
-                <a href="https://x.com/clipdonpump" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary">
-                    <img src="/assets/platforms/x.svg" alt="" class="h-4 w-4"/> @clipdonpump
-                </a>
-            </div>
-            <div class="space-y-4">
-                <h5 class="text-[10px] font-bold uppercase tracking-[0.2em]">Product</h5>
-                <ul class="space-y-3 text-sm text-muted-foreground">
-                    <li><a href="/campaigns" class="hover:text-foreground">Campaigns</a></li>
-                    <li><a href="/launch" class="hover:text-foreground">Launch</a></li>
-                    <li><a href="#how" class="hover:text-foreground">How it works</a></li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h5 class="text-[10px] font-bold uppercase tracking-[0.2em]">Social</h5>
-                <ul class="space-y-3 text-sm text-muted-foreground">
-                    <li><a href="https://x.com/clipdonpump" target="_blank" rel="noopener" class="hover:text-foreground">X · @clipdonpump</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="border-t border-hairline">
-            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-                <span>© 2026 Clipd · Built on Solana</span>
-                <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA:</span> <span data-ca-text>…</span></button>
-                <a href="https://x.com/clipdonpump" target="_blank" rel="noopener" class="text-primary hover:underline">X · @clipdonpump</a>
-            </div>
-        </div>
-    </footer>
+  </main>
+
+  <footer class="home-foot">
+    <a class="home-foot-brand" href="/">
+      <img src="/assets/clipdpfp.png?v=22" alt="" width="28" height="28" />
+      Clipd
+    </a>
+    <div class="home-foot-links">
+      <a href="/docs">Docs</a>
+      <a href="/campaigns">Campaigns</a>
+      <a href="/launch">Launch</a>
+      <a href="https://x.com/clipdonpump" target="_blank" rel="noopener">X · @clipdonpump</a>
     </div>
-    <script src="/assets/wallet.js?v=9"></script>
-    <script>
-      (function () {
-        function usd(n) {
-          return "$" + Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-        }
-        function viewsLabel(n) {
-          n = Number(n || 0);
-          if (n >= 1e6) return (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M+";
-          if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
-          return String(Math.round(n));
-        }
-        fetch("/api/stats")
-          .then(function (r) { return r.json(); })
-          .then(function (s) {
-            function set(id, v) {
-              var el = document.getElementById(id);
-              if (el) el.textContent = v;
-            }
-            set("stat-rewards", usd(s.paid_usd));
-            set("stat-views", viewsLabel(s.views));
-            set("stat-clippers-hero", String(s.clippers || 0));
-            set("stat-clippers", String(s.clippers || 0));
-            set("stat-live", String(s.live_campaigns || 0));
-            set("stat-tvl", usd(s.tvl_usd));
-            set("stat-paid", usd(s.paid_usd));
-          })
-          .catch(function () {});
-      })();
-    </script>
-    </body>
+    <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address">
+      <span class="ca-k">CA</span>
+      <span data-ca-text>…</span>
+    </button>
+  </footer>
 
+  <script src="/assets/wallet.js?v=9"></script>
+  <script>
+    (function () {
+      function usd(n) {
+        return "$" + Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+      function esc(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+      fetch("/api/stats")
+        .then(function (r) { return r.json(); })
+        .then(function (s) {
+          function set(id, v) {
+            var el = document.getElementById(id);
+            if (el) el.textContent = v;
+          }
+          set("stat-rewards", usd(s.paid_usd));
+          set("stat-live", String(s.live_campaigns || 0));
+          set("stat-clippers", String(s.clippers || 0));
+        })
+        .catch(function () {});
+
+      fetch("/api/campaigns")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var box = document.getElementById("home-camps");
+          if (!box) return;
+          var rows = (data.campaigns || []).filter(function (c) { return c.status === "live" || c.demo; }).slice(0, 4);
+          if (!rows.length) {
+            box.innerHTML = '<div class="empty card">No live campaigns yet. <a href="/launch">Launch one</a> to get a vault on the board.</div>';
+            return;
+          }
+          box.innerHTML = rows.map(function (c) {
+            return (
+              '<a class="glass-card glass-card-hover camp-card p-5" href="/campaigns/' + esc(c.id) + '">' +
+                '<div style="font-size:15px;font-weight:600">' + esc(c.ticker) + (c.name ? " · " + esc(c.name) : "") + "</div>" +
+                '<div class="meta" style="margin-top:.35rem">Vault ' + usd(c.budget_usd) + " · " + (c.clip_count || 0) + " clips</div>" +
+              "</a>"
+            );
+          }).join("");
+        })
+        .catch(function () {
+          var box = document.getElementById("home-camps");
+          if (box) box.innerHTML = '<div class="empty card">Could not load campaigns.</div>';
+        });
+    })();
+  </script>
+</body>
 </html>

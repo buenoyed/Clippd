@@ -1088,6 +1088,10 @@ class Handler(SimpleHTTPRequestHandler):
                 self._json(200, profile_for(addr))
             return
 
+        if path in ("/docs", "/docs/"):
+            self.path = "/docs.html"
+            return SimpleHTTPRequestHandler.do_GET(self)
+
         if path in ("/dashboard", "/dashboard/"):
             self.send_response(302)
             self.send_header("Location", "/launch")

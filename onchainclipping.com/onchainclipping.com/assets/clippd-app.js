@@ -119,10 +119,9 @@
     return `
       <header class="mk-nav">
         <div class="mk-nav-inner">
-          <a class="mk-brand" href="/"><img src="/assets/clipdpfp.png" alt="Clipd" width="36" height="36"/>Clipd</a>
-          <div class="mk-sep"></div>
+          <a class="mk-brand" href="/"><img src="/assets/clipdpfp.png" alt="Clipd" width="36" height="36"/></a>
           <nav class="mk-links">
-            <a href="/">Home</a>
+            <a href="/docs">Docs</a>
             <a class="${active === "campaigns" ? "on" : ""}" href="/campaigns" data-nav>Campaigns</a>
             <a class="${active === "launch" ? "on" : ""}" href="/launch" data-nav>Launch</a>
             ${
@@ -132,7 +131,7 @@
             }
           </nav>
           <div class="mk-nav-right">
-            <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA:</span> <span data-ca-text>…</span></button>
+            <button type="button" class="ca-chip" data-ca-chip data-ca="..." title="Copy contract address"><span class="ca-k">CA</span> <span data-ca-text>…</span></button>
             <a class="mk-x" href="https://x.com/clipdonpump" target="_blank" rel="noopener" aria-label="Clipd on X">
               <img src="/assets/platforms/x.svg" alt="" width="14" height="14"/>
             </a>
